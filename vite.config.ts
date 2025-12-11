@@ -1,10 +1,10 @@
 import { defineConfig } from 'vite';
-import react from '@vitejs/puglin-react'
+import react from '@vitejs/plugin-react'
 
 export default defineConfig({
-  puglins:[react()],
+  plugins:[react()],
   server:{
-    port: 6000,
+    port: 7000,
     host: true,
     open: true
   }
