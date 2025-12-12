@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Variabels */
+$primary-color: #fcffc4;
+$white: #f4f4f4;
+$font: Segoe UI;
+$font-color: #333;
+
+body{
+  background: $primary-color;
+  font-family: $font;
+  color: $font-color;
+  .hero{ 
+    background: $white;
+    width: 95vw;
+    height: 110px;
+    margin: auto;
+    margin-top: 2rem;
+    padding-right: 0;
+    padding-left: 10px;
+    h1{
+      font-size: 1.7rem;
+      padding-top: 0.5rem;
+      padding-bottom: 2rem;
+    }
+  }
+}
