@@ -15,17 +15,82 @@ body{
   font-family: $font;
   color: $font-color;
   .hero{ 
+    position: absolute;
     background: $white;
     width: 95vw;
+    max-width: 500px;
     height: 110px;
-    margin: auto;
-    margin-top: 2rem;
-    padding-right: 0;
-    padding-left: 10px;
+    left: 50%;
+    top: 130px;
+    padding: 16px 20px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.18);
+    z-index: 10;
+    transform: translateX(-50%) scale(0.3) translateY(-80px);
+    opacity: 0;
+    animation: masukHero 1.1s ease-out 0.3s forwards;
+  
     h1{
-      font-size: 1.7rem;
-      padding-top: 0.5rem;
-      padding-bottom: 2rem;
+      font-size: 1.85rem;
+      font-weight: bold;
+      margin: 0 0 20px 0;
+    }
+    p{
+      margin: 0;
+      color: #444;
+      font-size: 1.15rem;
+    }
+  }
+  @keyframes masukHero {
+    0% {
+      transform: translateX(-50%) scale(0.3) translateY(-80px);
+      opacity: 0;
+    }
+    70% {
+      transform: translateX(-50%) scale(1.05);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(-50%) scale(1) translateY(0);
+      opacity: 1;
+    }
+  }
+  .hero-image{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+    .jokowi{
+      width: 100vw;
+      height: 200px;
+      object-fit: cover;
+    }
+    .gibran{
+      top: 15px;
+      left: 15px;
+      width: 50px;
+      position: absolute;
+      z-index: 3;
+    }
+    .kemendikbud{
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      z-index: 3;
+      img{
+        width: 50px;
+        z-index: 2;
+      }
+    }
+    .fa-xmark{
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      z-index: 3;
+      width: 50px;
+      font-size: 60px;
+      color: red;
     }
   }
 }

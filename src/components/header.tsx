@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import '../../scss/style.scss'
 
 type Props = {
