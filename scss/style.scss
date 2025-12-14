@@ -9,6 +9,7 @@ $primary-color: #fcffc4;
 $white: #f4f4f4;
 $font: Segoe UI;
 $font-color: #333;
+$shadow: rgb(0,0,0,0.2);
 
 body{
   background: $primary-color;
@@ -23,7 +24,7 @@ body{
     left: 50%;
     top: 130px;
     padding: 16px 20px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.18);
+    box-shadow: 0 8px 30px $shadow;
     z-index: 10;
     transform: translateX(-50%) scale(0.3) translateY(-80px);
     opacity: 0;
@@ -91,6 +92,20 @@ body{
       width: 50px;
       font-size: 60px;
       color: red;
+    }
+  }
+  form{
+    position: relative;
+    top: 100px;
+    background: $white;
+    margin: 0 1rem;
+    padding: 1.2rem;
+    box-shadow: 0 5px 15px $shadow;
+    fieldset{
+      border: none;
+    }
+    .nama{
+      
     }
   }
 }
